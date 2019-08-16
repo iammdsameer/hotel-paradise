@@ -1,0 +1,29 @@
+.top-info-minor {
+	background: #FCFAFA;
+	padding: 0 10px;
+	border-bottom: 1px solid #222823;
+}
+
+.social-app-header {
+	float: right;
+	border-left: 1.2px solid black;
+	margin-bottom: 4px;	
+}
+
+.social-app-header a:hover i {
+	transition: .5s;
+	transform: scale(2);
+}
+
+.social-app-header a {
+	color: #1056AD;
+}
+
+.social-app-header a i{
+	transform: scale(1.5);
+	padding: 10px;
+}
+
+.clearfix {
+	clear: both;
+}

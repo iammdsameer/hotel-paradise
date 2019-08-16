@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+	background: url(../_img/chicken-fire.gif);
+	background-repeat: no-repeat;
+}
+
+h1 {
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	color: white;
+	width: 20%;
+	text-align: center;
+	border-bottom: 2px solid #1056AD;
+}
+
+.content {
+	background: rgba(0,0,0,0.4);
+	margin: 0;
+	padding: 0;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.leftSection {
+	width: 25%;
+	text-align: justify;
+	margin-left: 60px;
+	display: inline-block;
+	float: left;
+}
+.rightSection {
+	width: 25%;
+	text-align: justify;
+	margin-right: 40px;
+	display: inline-block;
+	float: right;
+}
+
+.card {
+	display: inline-block;
+	margin: 30px 90px;
+	float: left;
+}
+
+.front img {
+	position: absolute;
+	z-index: 1;
+}
+
+.back img {
+	position: absolute;
+}
+.card img{
+	width: 300px;
+	height: 300px;
+	margin: 0 80px;
+	cursor: pointer;
+}

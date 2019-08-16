@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us | Hotel Paradise</title>
+	<!-- Title Bar contains logo of the company -->
+	<link rel="icon" href="../_img/icon-logo.png">
+	<link rel="stylesheet" href="../_css/header.css">
+	<link rel="stylesheet" href="../_css/minor-pages.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../_css/scrollbar-modified.css">
+	<link rel="stylesheet" href="../_css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="../_css/about-us.css">
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Used internal CSS for textarea and map modifications -->
+    <style>
+    textarea {
+    	margin-top: 3%;
+    	width: 35%;
+    	height: 200px;
+    	overflow: auto;
+    }
+    
+    #map {
+		width: 40%;
+		height: 300px;
+	}
+
+	.centered-info {
+		width: 60%; 
+		margin-left: 50px; 
+		margin-right: 70px; 
+		font-size: 1.2em; 
+		display: flex; 
+		align-items: center; 
+		text-align: justify;
+	}
+    </style>
+</head>
+<body>
+	<header>
+		<div class="top-info-minor">
+			<img src="../_img/logo.png">
+			<!-- This div was created to fix the float issue -->
+			<div></div>
+			<div class="social-app-header">
+				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="../index.html" title="Hotel Paradise">Home</a></li>
+				<li><a href="about.html" title="About Us" class="active">About Us</a></li>
+				<li><a href="facilities.html" title="Facilities">Facilities</a></li>
+				<li><a href="gallery.html" title="Gallery">Gallery</a></li>
+				<li><a href="ourfood.html" title="Our Food">Our Food</a></li>
+				<li><a href="../index.html#register" title="Book Now">Book Now</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Content Starts -->
+	<main>
+		<section>
+			<figure>
+				<img src="../_img/about-us.jpg" class="about-main">
+			</figure>
+			<div class="contact-us">
+				<form action="#">
+					I am <input type="text" name="name" placeholder="Muhammed Sameer" required> having email of <input type="email" name="email" placeholder="itsmdsameer@gmail.com" class="make-long" required> and I have a message for you! And the message is: <textarea placeholder="Your Message Here"></textarea><br>
+					<button><i class="fab fa-telegram-plane fly"></i></button>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</section>
+		<section style="display: flex; justify-content: flex-end; margin: 50px;">
+			<div class="centered-info" height="300px">
+				<p>
+						Explore Hotel Pardise with Google Maps. Search its floor plan and find all the accommodations Hotel Paradise has to offer, like the world-class nightlife destinations Cocktail Lounge and Nightclub. Locate QUA Baths and Spa to find the ultimate place to unwind and get pampered, or browse the selection of restaurants at Hotel Paradise.
+				</p>
+			</div>
+			<div id="map"></div>
+			<script src="../_scripts/map.js"></script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByi6R4RY4-FQkQnIIM141WlU3ei7DMsYc&callback=initMap">
+		    </script>
+		</section>
+		<!-- Since the web traffic is off the content so aside is used here    -->
+		   <aside style="margin-left: 10px; margin-bottom: 20px;">
+			<h3 style="text-decoration: underline;">Web Traffic since the last week</h3>
+				<div style="display: flex;">
+					<div>
+						<!-- Canvas was used for bar-graph demonstration. -->
+						<canvas id="myCanvas" width="320" height="200" style="border: 1px solid black;"></canvas>
+						<figcaption> P.S: scale at 100K are displayed above.</figcaption>
+					</div>
+					<div class="centered-info" height="200px">
+						<p>
+							Hotel Paradise has been visited by 1.3 millions of people altogether since last week. It is because of our excellence in our services and your belief in us that made us what we are today standing. Hotel Paradise has been one of the most trustworthy and reliable hotels out there in Nepal. If you haven't visited here yet then visit soon. We would be glad to render you our services. Visit Soon!
+						</p>
+					</div>
+				</div>
+		   </aside>
+	</main>
+	<!-- Content Ends -->
+	<!-- The Footer of the Page starts here. -->
+	<footer>
+		<div>
+			<div class="toLeft">
+				<i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu 44600<br>
+				<i class="fas fa-phone-square"></i> +977-1-4309587 / +977-1-4893788<br>
+				<i class="fas fa-envelope-square"></i> itsmdsameerkhan@gmail.com
+			</div>
+			<div class="toRight">
+				<i class="fas fa-exclamation-triangle"></i> Reports & Complaints<br>
+				<i class="fas fa-fax"></i> Fax: +977-1-4302387<br>
+				<i class="fas fa-bell"></i> Get newsletters & recommendations.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div id="social-app">
+			<div class="get-connected">Get connected with Hotel Paradise</div>
+			<div class="social-app">
+				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<div class="copyright">&copy; 2018. All right reserved to Muhammed Sameer Khan.</div>
+		</div>
+	</footer>
+	<!-- Footer Ends -->
+	<script src="../_scripts/canvas-for-web-traffic.js"></script>
+	<script src="../_scripts/responsive-nav.js"></script>
+</body>
+</html>

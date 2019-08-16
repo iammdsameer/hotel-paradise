@@ -1,0 +1,53 @@
+body {
+	background: url(../_img/homepage.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgba(0,0,0,.6);		/*Used for transclucent background*/
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-flow: wrap;
+}
+
+#icons {
+	box-sizing: border-box;
+	color: white;
+	font-size: 26px;
+	padding: 100px;
+}
+
+.icons-listing {
+	width: calc(100%/3);
+}
+
+#icons i {
+	transform: scale(1.5);
+	padding: 40px;
+}
+
+/*Responsiveness of 3 divs listed */
+
+@media screen and (max-width: 1200px) {
+	.icons-listing {
+		width: 50%;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.icons-listing {
+		width: 100%;
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,66 @@
+footer {
+	position: relative;
+	background: #FCFAFA;
+	margin-bottom: 0;
+	padding: 50px;
+}
+footer .toLeft i, .toRight i{
+	display: inline-block;
+	transform: scale(1.5);
+	margin-right: 15px;
+	margin-bottom: 25px;
+}
+
+.toLeft {
+	display: inline-block;
+	float: left;
+}
+
+.toRight{
+	display: inline-block;
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+table th {
+	border-bottom: 1px solid black;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+div .get-connected {
+	width: 35%;
+	font-weight: 600;
+	margin: 20px auto;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+div .social-app {
+	text-align: center;
+	margin: 0 auto;
+	transform: scale(1.5);
+}
+
+div .social-app i{
+	padding: 5px;	
+}
+div .social-app i:hover{
+	transition: .5s;
+	transform: scale(2);
+}
+
+div .social-app a {
+	color: #1056AD;
+}
+
+.copyright {
+	margin-top: 15px;
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+	background: #ccc;
+}

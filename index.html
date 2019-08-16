@@ -1,0 +1,106 @@
+<!-- Execute with Webkit Browsers (up-to-date version) for best experience  -->
+<!-- Chrome is recommended -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home | Hotel Paradise</title>
+	<!-- Title Bar contains logo of the company -->
+	<link rel="icon" href="_img/icon-logo.png">
+	<!-- Files linked are self-explanatory -->
+	<link rel="stylesheet" href="_css/header.css">
+	<link rel="stylesheet" href="_css/scrollbar-modified.css">
+	<link rel="stylesheet" href="_css/homepage-style.css">
+	<link rel="stylesheet" href="_css/footer.css">
+	<!-- All icons used in process of website build are to be credited to Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- Font used is taken via Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- Used jQuery CDN for on-click smooth animation -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<figure>
+			<div class="top-info">
+				<a href="#"><img src="_img/logo.png" alt="Brand Logo"></a>
+			</div>
+		</figure>
+		<div class="menu-toggle"></div>
+		<!-- CSS animation applied to the navigation-bar on hover -->
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Hotel Paradise" class="active">Home</a></li>
+				<li><a href="_html/about.html" title="About Us">About Us</a></li>
+				<li><a href="_html/facilities.html" title="Facilities">Facilities</a></li>
+				<li><a href="_html/gallery.html" title="Gallery">Gallery</a></li>
+				<li><a href="_html/ourfood.html" title="Our Food">Our Food</a></li>
+				<!-- Smooth animation applied to 'Book Now' link -->
+				<li><a href="#register" title="Book Now" class="smooth">Book Now</a></li>
+		</nav>
+	</header>
+	<!-- Content Starts -->
+	<main>
+		<div class="video-bg">
+			<video id="video" preload="auto" autoplay="true" loop="loop" muted="muted"><source src="_img/homepage-bg.mp4">Video Unsupported Fallback</video>
+		</div>
+		<div class="content">
+			<div class="theBranding">
+				<h1>Welcome to Hotel Paradise</h1>
+				<h2>feel like heaven</h2>
+			</div>
+			<div id="register">
+		        <form action="#">
+		            <fieldset>
+		                <legend>Book For</legend>
+		                    <div>
+		                        <label>Date of Arrival</label>
+		                        <input type="date" name="arrival" value="" max="2025-12-31" id="arrival"> <i class="far fa-calendar-alt"></i>
+		                        <label>Date of Departure</label>
+		                        <input type="date" name="departure" value="" min="2018-1-1" max="2025-12-31" id="departure"> <i class="far fa-calendar-alt"></i>
+		                        <label>No. of Rooms</label>
+		                        <input type="number" name="numofrooms" min="1" max="5" value="1" id="rooms"> <i class="fas fa-person-booth"></i>
+		                        <label>Adults</label>
+		                        <input type="number" name="person" min="1" max="10" value="1" id="person"> <i class="fas fa-users"></i>
+								<!-- Used inline CSS -->
+		                        <button id="sub"><i  class="fa button" style="transform: scale(4);">&#xf058;</i></button>
+		                    </div>
+		            </fieldset>
+		        </form>
+	    	</div>
+		</div>
+	</main>
+	<!-- Content Ends -->
+	<!-- The Footer of the Page starts here. -->
+	<footer>
+		<div>
+			<div class="toLeft">
+				<i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu 44600<br>
+				<i class="fas fa-phone-square"></i> +977-1-4309587 / +977-1-4893788<br>
+				<i class="fas fa-envelope-square"></i> itsmdsameerkhan@gmail.com
+			</div>
+			<div class="toRight">
+				<i class="fas fa-exclamation-triangle"></i> Reports & Complaints<br>
+				<i class="fas fa-fax"></i> Fax: +977-1-4302387<br>
+				<i class="fas fa-bell"></i> Get newsletters & recommendations.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div id="social-app">
+			<div class="get-connected">Get connected with Hotel Paradise</div>
+			<div class="social-app">
+				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<div class="copyright">&copy; 2018. All right reserved to Muhammed Sameer Khan.</div>
+		</div>
+	</footer>
+	<!-- Footer Ends -->
+	<!-- Script for Smooth Animation -->
+	<script src="_scripts/local-storage.js"></script>
+	<script src="_scripts/smooth-scroll.js"></script>
+	<script src="_scripts/responsive-nav.js"></script>
+</body>
+</html>

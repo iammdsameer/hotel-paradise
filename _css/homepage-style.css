@@ -1,0 +1,135 @@
+:root {
+	--hotel-theme: #1056AD;		/*Learnt assigning values to variable. Added just for test (and it worked).*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header CSS
+----------------*/
+
+.top-info {
+	background: #FCFAFA;
+	padding: 0 4px;
+	border-bottom: 1px solid #222823;
+}
+
+
+/* Main CSS
+--------------*/
+
+.video-bg {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+#video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.content {
+	width: 100%
+	min-height: 100%;
+	z-index: 1;
+}
+
+h1, h2{
+	color: white;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+	height: 170px;
+	width: 250px;
+}
+
+.theBranding {
+	position: absolute;
+	left: 65%;
+	top: 80%;
+}
+
+fieldset{
+	margin-top: 50%;
+	margin-left: 20%;
+	padding: 30px;
+	height: 450px;
+	width: 300px;
+	border-radius: 15px;
+	background: transparent;
+	opacity: .8;
+	filter: blur();
+	border: 3px solid var(--hotel-theme, #1056AD);
+	box-shadow: 3px 1px 12px 0px rgba(0, 0, 0, 1);
+}
+
+form {
+  display: table;
+}
+  
+label {
+    position: relative;
+    font-size: 18px;
+    display: block;
+}
+
+input {
+	font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+    
+input:focus {
+    padding: 15px 4px;
+}
+  
+input:hover {
+    background: rgba(16,86,173,0.6);
+}
+
+legend{
+	font-size: 25px;
+	background: white;
+	border-radius: 5px;
+}
+
+
+button{
+	transition: .5s;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+button:hover{
+	transition: .5s;
+	transform: scale(1.4);
+}
+.button {
+	color: var(--hotel-theme, #1056AD);
+}
+
+#register {
+	margin-bottom: 15%;
+}
